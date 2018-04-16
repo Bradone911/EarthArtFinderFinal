@@ -24,7 +24,7 @@ public class ArtFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_art, container, false);
 
         mListRecyclerView = (RecyclerView) view
-                .findViewById(R.id.list_recycler_view);
+                .findViewById(R.id.art_recycler_view);
         mListRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         updateUI();
