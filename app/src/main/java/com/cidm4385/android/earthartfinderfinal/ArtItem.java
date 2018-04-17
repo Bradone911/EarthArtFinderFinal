@@ -4,7 +4,7 @@ public class ArtItem {
 
 
     public String mItemName;
-    public boolean mChecked;
+
 
 
     public String getItemName(){
@@ -13,13 +13,5 @@ public class ArtItem {
 
     public void setItemName(String itemName){
         mItemName = itemName;
-    }
-
-    public boolean isChecked(){
-        return mChecked;
-    }
-
-    public void setChecked(boolean checked){
-        mChecked = checked;
     }
 }

@@ -47,14 +47,14 @@ public class ArtItemFragment extends Fragment {
             }
         });
 
-        mIsChecked = (CheckBox) v.findViewById(R.id.checkbox);
-        mIsChecked.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
-                mArtItem.setChecked(isChecked);
-            }
-        });
+//        mIsChecked = (CheckBox) v.findViewById(R.id.checkbox);
+//        mIsChecked.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton buttonView,
+//                                         boolean isChecked) {
+//                mArtItem.setChecked(isChecked);
+//            }
+//        });
         return v;
 
     }

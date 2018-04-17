@@ -52,24 +52,23 @@ public class ArtFragment extends Fragment {
 
     private class ArtHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        //        private List<CheckListItem> mCheckListItems;
-        private ArtItem mArtItem;
 
+        private ArtItem mArtItem;
         private TextView mItemNameTextView;
-        private CheckBox mCheckBoxCheckBoxView;
+
 
         public ArtHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.art_item, parent, false));
             itemView.setOnClickListener(this);
 
             mItemNameTextView = (TextView) itemView.findViewById(R.id.item_name);
-            mCheckBoxCheckBoxView = (CheckBox) itemView.findViewById(R.id.checkbox);
+
         }
 
         public void bind(ArtItem artItem) {
             mArtItem = artItem;
             mItemNameTextView.setText(artItem.getItemName());
-            mCheckBoxCheckBoxView.setChecked(artItem.isChecked());
+
         }
 
         @Override
